@@ -26,5 +26,5 @@ class MenuItem(Base):
 	restaurant = relationship(Restaurant)
 
 
-engine = create_engine('postgresql://localhost:5434/resturants')
+engine = create_engine('postgresql://localhost:5432/restaurants')
 Base.metadata.create_all(engine)
